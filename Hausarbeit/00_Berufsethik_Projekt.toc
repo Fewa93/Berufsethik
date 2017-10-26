@@ -1,0 +1,18 @@
+\select@language {ngerman}
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Fragestellung}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Problemstellung}{1}{subsection.1.3}
+\contentsline {section}{\numberline {2}Grundlagen}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}K\IeC {\"u}nstliche Intelligenz}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Singularit\IeC {\"a}t}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Ethik-Typ-1}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Ethik-Typ-2}{2}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Ethik-Typ-3}{2}{subsection.2.5}
+\contentsline {section}{\numberline {3}Ethik 1}{3}{section.3}
+\contentsline {section}{\numberline {4}Ethik 2}{4}{section.4}
+\contentsline {section}{\numberline {5}Ethik 3}{5}{section.5}
+\contentsline {section}{\numberline {6}Abw\IeC {\"a}gung}{6}{section.6}
+\contentsline {section}{\numberline {7}Fazit}{7}{section.7}
+\contentsline {section}{Abbildungsverzeichnis}{9}{section*.4}

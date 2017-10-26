@@ -1,0 +1,53 @@
+\documentclass[12pt, a4paper]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[english, ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amsmath, amssymb}
+\usepackage{eurosym}
+\usepackage{abstract}
+\usepackage{geometry}
+\geometry{left=3.5cm, right=2cm, top=2.5cm, bottom=2.5cm}
+\usepackage{fancyhdr, lastpage, listings, wasysym, 
+	bibgerm, comment, changebar}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{acronym}
+\usepackage{footnote}
+\usepackage{url}
+
+
+\bibliographystyle{alphadin} 
+
+\title{Künstliche Intelligenz - Warnung vor der Singularität}
+\author{Christian Högerle, Nico Vinzenz, Felix Waibel}
+\date{\today}
+
+\begin{document}
+	\pagestyle{empty}
+	\include{01_Deckblatt}
+	\include{02_Eidesstattliche_Erklaerung}
+	\include{03_Zusammenfassung}
+	\include{02_Abkuerzungsverzeichnis}
+	\tableofcontents
+	\clearpage
+	%Seitenzahl und Kapitelname in der Kopfzeile anzeigen
+	\pagestyle{fancy}
+	\fancyhf{}
+	\pagenumbering{arabic}
+	\fancyhead[RO,LE]{\small \sffamily  \thepage}
+	\fancyhead[LO,RE]{\small \sffamily \leftmark}
+	\include{04_Einleitung}
+	\include{05_Grundlagen}
+	\include{06_Ethik_1}
+	\include{07_Ethik_2}
+	\include{08_Ethik_3}
+	\include{09_Abwaegung}
+	\include{10_Fazit}
+	\bibliography{Hauptdatei}
+	\newpage
+	\addcontentsline{toc}{section}{Abbildungsverzeichnis} 
+	\listoffigures
+\end{document}
