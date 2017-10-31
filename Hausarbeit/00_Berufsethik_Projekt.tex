@@ -11,7 +11,13 @@
 \geometry{left=3.5cm, right=2cm, top=2.5cm, bottom=2.5cm}
 \usepackage{fancyhdr, lastpage, listings, wasysym, 
 	bibgerm, comment, changebar}
+
 \usepackage[hidelinks]{hyperref}
+%Ermöglicht Zeilenumbrüche in Links (Fußzeile)
+\makeatletter
+\g@addto@macro\UrlBreaks{\do\-}
+\makeatother
+
 \usepackage{color}
 \usepackage{colortbl}
 \usepackage{acronym}
