@@ -1,4 +1,5 @@
 \documentclass[12pt, a4paper]{scrartcl}
+\usepackage{float}
 \usepackage[utf8]{inputenc}
 \usepackage[english, ngerman]{babel}
 \usepackage[T1]{fontenc}
@@ -22,6 +23,16 @@
         linkcolor=black,
         urlcolor=blue,
         citecolor=black]{hyperref}
+    
+%ermöglicht die Aneinanderreihung von Fußnoten mit Komma   
+\let\oldFootnote\footnote
+\newcommand\nextToken\relax
+
+\renewcommand\footnote[1]{%
+    \oldFootnote{#1}\futurelet\nextToken\isFootnote}
+
+\newcommand\isFootnote{%
+    \ifx\footnote\nextToken\textsuperscript{,}\fi}
 
 
 %Ermöglicht Zeilenumbrüche in Links (Fußzeile)
