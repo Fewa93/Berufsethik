@@ -15,9 +15,8 @@ Einen weiteren Versuch die \ac{ki} zu definieren, unternahm Elanie Rich bereits 
 	 \glqq Artificial Intelligence is the study of how to make computers do things at which, at the moment, people are better\grqq.\footnote{\cite{ArtificialIntelligence}}
 \end{quote}
 
-Diese Definition sollen zwei Beispiele verdeutlichen.\newline
-Im Speichern von Daten und der Berechnung von nummerischen Aufgaben sind Computer uns um ein Vielfaches überlegen. \newline
-Die Menschen sind allerdings in der Erkennung von Objekten den aktuellen Algorithmen weit überlegen. Sobald wir einen Raum betreten findet im unserem Unterbewusstsein eine Objekterkennung statt. Wir erkennen sofort, dass der Raum beispielsweise drei Fenster, zwei Türen und vier Wände hat. Gleichzeit erkennen wir Gegenstände im Raum, wie Tische, Stühle und Bildschirme auf den Tischen. Danach schließen wir darauf, dass dieser Raum ein Computerraum sein muss. Dieser Entschluss wird gefasst mit Hilfe von Wissen was wir bereits haben und Erfahrungen die wir erlebt haben. Wir verknüpfen innerhalb von Sekunden die Objekte und unser vorhandenes Wissen, um einen Entschluss zu fassen. \newline 
+Das nächste Beispiel nennt eine \glqq Sache\grqq\ in der Computer uns überlegen sind. Computer sind uns im Speichern von Daten und der Berechnung von nummerischen Aufgaben überlegen. \newline
+Dagegen sind die Menschen in der Erkennung von Objekten den aktuellen Algorithmen überlegen. Sobald wir einen Raum betreten findet im unserem Unterbewusstsein eine Objekterkennung statt. Wir erkennen sofort, dass der Raum beispielsweise drei Fenster, zwei Türen und vier Wände hat. Gleichzeit erkennen wir Gegenstände im Raum, wie Tische, Stühle und Bildschirme auf den Tischen. Danach schließen wir darauf, dass dieser Raum ein Computerraum sein muss. Dieser Entschluss wird gefasst mit Hilfe von Wissen was wir bereits haben und Erfahrungen die wir erlebt haben. Wir verknüpfen innerhalb von Sekunden die Objekte und unser vorhandenes Wissen, um einen Entschluss zu fassen. \newline 
 Die aktuelle \ac{ki} steckt hier noch in den Anfängen. Moderne Algorithmen können zwar mehr oder weniger gut Objekte erkennen und diese Greifen, aber die \ac{ki} hat kein Gesamtbild der Umgebung. Die zwei Beispiele sollen zeigen, dass es Dinge gibt die ein Computer aktuell besser kann aber auch Dinge die ein Computer noch nicht besser kann als ein Mensch. 
 
 Die KI ist ständig im Wandel. Gilt ein Problem als gelöst dann verschieben sich die Aufgabenbereiche der KI.   
@@ -29,17 +28,33 @@ Es gibt noch zahlreiche Gebiete in denen wir Menschen der \ac{ki} weit überlege
 \subsection{Chatbot}
 Ein Chatbot ist eine Art Maschine für die Kommunikation mit dem Menschen. Meistens besitzt ein Chatbot ein Dialogsystem. Das heißt der Kommunikationspartner kann per Texteingaben mit dem Chatbot kommunizieren. Der Mensch stellt eine Frage per Texteingabe. Der Chatbot versucht daraufhin die Frage zu interpretieren und generiert eine Antwort.
 
-Die Idee eine Maschine zur Kommunikation mit dem Menschen einzusetzen ist nicht neu. Bereits 1966 entwickelte Joseph Weizenbaum ein Computerprogramm, dass die Kommunikation mit Mensch und Computer ermöglichte. Das Programm wird \glqq ELIZA\grqq\ genannt. Im Hintergrund verwendet das Programm ein sogenanntes \glqq Pattern Matching\grqq\, was einer Mustererkennung entspricht. Mit dieser eigentlich einfachen Technik, war es möglich den ersten Chatbot zu programmieren. An dieser Stelle soll nicht weiter auf technische Details eingegangen werden.\footnote{vgl. \cite{WikiELIZA}}    
+Die Idee eine Maschine zur Kommunikation mit dem Menschen einzusetzen ist nicht neu. Bereits 1966 entwickelte Joseph Weizenbaum ein Computerprogramm, dass die Kommunikation mit Mensch und Computer ermöglichte. Das Programm wird \glqq ELIZA\grqq\ genannt. Im Hintergrund verwendet das Programm ein sogenanntes \glqq Pattern Matching\grqq\, was einer Mustererkennung entspricht. Mit dieser eigentlich einfachen Technik, war es möglich den ersten Chatbot zu programmieren. Eine einfache Version von ELIZA verwendet einen Theasaurs. Dies ist eine Art Wörterbuch, dessen Wörter durch Relationen miteinander verbunden sind. So ist zum Beispiel Mutter mit dem Wort Familie verbunden. Des Weiteren gibt es ein vordefiniertes Set von Phrasen. Diese Phrasen sind häufig Fragen oder Aufforderungen. Ein Beispiel ist auf der deutschen Wikipedia-Seite zu finden. 
+\begin{quote}
+    Benutzer: Ich habe ein Problem mit meinem Vater.\newline
+    ELIZA: Erzählen Sie mir mehr über Ihre Familie! 
+\end{quote}
+Hier sieht man wie das Wort \glqq Vater\grqq\ mit dem Wort \glqq Familie\grqq\ in einer Relations steht. ELIZA verwendet dann eine passende Phrase zum Wort \glqq Familie\grqq.
+\begin{quote}    
+    Benutzer: Krieg ist der Vater aller Dinge.\newline
+    ELIZA: Erzählen Sie mir mehr über Ihre Familie!
+\end{quote}    
+Im zweiten Beispiel verwendet ELIZA die gleiche Phrase wie im ersten Beispiel. An dieser Stelle kann man sehr gut sehen, dass ELIZA die Bedeutung des Satzes in keiner Weise versteht. Es wird rein nach \glqq Pattern Matching\grqq\ vorgegangen. Es wird eine passende Phrase zu einem passendem Pattern gesucht.\footnote{vgl. \cite{WikiELIZADE} und \cite{WikiELIZA}}    
 
-Heute setzen immer mehr Firmen Chatbots in der Kundenkommunikation ein, speziell beim Support von Kunden. So greifen Firmen wie Lufthansa, Zalando, Opel, etc. bereits auf Chatbots zurück. Die Chatbots sind zwar noch nicht voll integriert, aber erste Experimente finden bereits statt.\footnote{vgl. \cite{UnternehmenChatbots}} Getrieben durch die Fortschritte in der \ac{ki} werden die Chatbots immer besser. Vor allem das maschinelle Lernen hilft den Chatbots sich kontinuierlich zu verbessern. Es wird immer schwieriger den Gegenüber als Chatbot zu identifizieren. Die University of Reading führte 2014 den sogenannten Turing-Test\footnote{Der Bericht definiert den Test als bestanden: Wenn ein Chatbot für mehr als 5 Minuten für einen Menschen gehalten wird und wenn mehr 30 \% der Testteilnehmer getäuscht werden} beim Chatbot \glqq Eugene Goostman\grqq\ durch. Der Chatbot schaffte es 33 \% der 30 Testteilnehmer zu täuschen.\footnote{vgl. \cite{UnivOfReading}}
+Heute setzen immer mehr Firmen Chatbots in der Kundenkommunikation ein, speziell beim Support von Kunden. So greifen Firmen wie Lufthansa, Zalando, Opel, etc. bereits auf Chatbots zurück. Die Chatbots sind zwar noch nicht voll integriert, aber erste Experimente finden bereits statt.\footnote{vgl. \cite{UnternehmenChatbots}} \newline
+Lufthansa startete im November 2016 den Chatbot \glqq Mildred\grqq. Dieser Chatbot ermöglicht die Suche nach dem günstigsten Preis für einen Flug. Die angebotenen Flüge liegen alle innerhalb der kommenden neun Monate. Der Chatbot ist in den Facebook-Messenger integriert. Für eine Suche geben die Nutzer Abflug- und Zielflughafen an. Auch die internationalen Buchstabencodes können verwendet werden. Der Chatbot erkennt auch die Buchungsklassen der Lufthansa. Über die mobile Version von LH.com kann dann das angebotene Ticket gebucht werden. Erste Tests des Chatbots zeigten bereits Schwächen des Chatbots. Auf die Frage \glqq Kann ich am selben Tag zurück?\grqq\ entgegnet Mildred ob sie nochmal Flüge suchen soll. Eine weitere Eingabe lautet \glqq Ich habe Flugangst\grqq, Mildred fragt daraufhin \glqq Wohin möchtest du fliegen?\grqq. Wie diese Beispiele zeigen ist Mildred noch weit entfernt davon, eine Kon­ser­va­ti­on zu führen. Alles was über eine Fluganfrage hinausgeht ist für Mildred unbekannt.\footnote{vgl. \cite{LHQuelle1} und \cite{LHQuelle2}} \newline 
+Getrieben durch die Fortschritte in der \ac{ki} werden die Chatbots immer besser. Vor allem das maschinelle Lernen hilft den Chatbots sich kontinuierlich zu verbessern. Es wird immer schwieriger den Gegenüber als Chatbot zu identifizieren. Die University of Reading führte 2014 den sogenannten Turing-Test\footnote{Der Bericht definiert den Test als bestanden: Wenn ein Chatbot für mehr als 5 Minuten für einen Menschen gehalten wird und wenn mehr 30 \% der Testteilnehmer getäuscht werden} beim Chatbot \glqq Eugene Goostman\grqq\ durch. Der Chatbot schaffte es 33 \% der 30 Testteilnehmer zu täuschen.\footnote{vgl. \cite{UnivOfReading}}
 
 Bitkom untersuchte mit Hilfe einer Umfrage\footnote{vgl. \cite{BitkomChatbot}} den Einsatz von Chatbots unter den Bundesbürgern. Die Umfrage wurde am 18.01.2017 mit dem Titel \glqq Jeder Vierte will Chatbots nuten\grqq\ veröffentlicht. Es wurden im November 2016 insgesamt 1.005 Personen ab 14 Jahren in Deutschland befragt. Die Umfrage kam zu interessanten Ergebnissen:
 \begin{itemize}
- 	\item Die Umfrage ergab, dass 63 Prozent keine Chatbots nutzen wollen. Das heißt sie möchten nicht mit einer Maschine kommunizieren. 
-	 \item Das Anfragen zuverlässig bearbeitet werden können bezweifeln etwa 50 Prozent.
-	 \item Das Chatbots uninteressant sind, weil die \ac{ki} noch nicht ausgereift ist, denken 47 Prozent.
+	\item Sieben von zehn Befragten können sich vorstellen einen Chatbot zu verwenden. Zum Beispiel für die Terminplanung, 	beim Ticketeinkauf oder beim Online-Shopping.
 \end{itemize}
-Dieser Auszug aus der Studie zeigt uns, dass die Bundesbürger zum Zeitpunkt der Studie eher skeptisch zum Thema Chatbots sind. Es besteht allgemein noch eine Ablehnung gegenüber Chatbots. Wie sich dieses Gefüge mit der Zeit verschieben wird kann keiner sagen.  
+Unter denen die keine Chatbots verwenden wollen, 
+\begin{itemize}	
+	\item gaben 63 Prozent an, dass sie nicht mit einer Maschine kommunizieren wollen. 
+	\item etwa 50 Prozent bezweifeln, dass Anfragen zuverlässig bearbeitet werden können.
+	\item 47 Prozent denken, dass Chatbots uninteressant sind, weil die \ac{ki} noch nicht ausgereift ist.
+\end{itemize}
+Dieser Auszug aus der Studie zeigt uns, dass die Befragten mit etwa 70 Prozent hinter dem Einsatz von einem Chatbot stehen. Sie können es sich vorstellen, einen Chatbot auch für private Angelegenheiten zu verwenden. Wie sich dieses Gefüge mit der Zeit verändern wird kann keiner sagen.  
 
 \subsection{Platon}
 Platon (* 427 v.  Chr. in Athen - † 347 v. Chr. in Athen) war ein griechischer Philosoph, der auf die gesamte Entwicklung der Philosophie einen großen Einfluss hatte. 
