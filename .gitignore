@@ -1,3 +1,6 @@
+##Ignoriere PPT Tempdatei
+~$*.pptx
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
